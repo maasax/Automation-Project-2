@@ -95,7 +95,7 @@ describe("Issue create", () => {
   });
 
   //Assingment 2.2
-  it.only("Should create an issue and validate it successfully", () => {
+  it("Should create an issue and validate it successfully", () => {
     // System finds modal for creating issue and does next steps inside of it
     cy.get('[data-testid="modal:issue-create"]').within(() => {
       // Description field ("My bug description")
@@ -169,7 +169,7 @@ describe("Issue create", () => {
   });
 
   //Assingment 2.3
-  it.only("Should create an issue with random data and verify data retention", () => {
+  it("Should create an issue with random data and verify data retention", () => {
     const randomIssueDescription = faker.lorem.sentence(5);
     const randomIssueTitle = faker.lorem.word();
 
